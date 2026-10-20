@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khám Phá Các Vùng Đất Việt Nam | Hành Trình Di Sản & Thiên Nhiên</title>
+  <meta name="description" content="Trang thông tin du lịch khám phá vẻ đẹp kỳ vĩ của ba miền Bắc, Trung, Nam Việt Nam. Cẩm nang điểm đến văn hóa, ẩm thực và cảnh sắc non nước hình chữ S.">
+  
+  <!-- Favicon cho tab trình duyệt -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Animate.css 4.1.1 qua CDN (cdnjs) đặt trước style.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- CSS thuần -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Thanh tiến độ cuộn trang bằng CSS thuần (aria-hidden) -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ================= HEADER & NAV ================= -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-link animate__animated animate__fadeInLeft" aria-label="Trang chủ Du Lịch Việt Nam">
+        <span class="brand-icon">🌿</span>
+        <span>Việt Nam Travel</span>
+      </a>
+
+      <!-- Checkbox ẩn & Label làm nút Hamburger thuần CSS -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Mở đóng menu điều hướng">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Trang chủ</a></li>
+          <li><a href="#gioi-thieu" class="nav-link">Giới thiệu</a></li>
+          <li><a href="#vung-mien" class="nav-link">Ba Miền</a></li>
+          <li><a href="#diem-den" class="nav-link">Điểm đến</a></li>
+          <li><a href="#lien-he" class="nav-link nav-link-cta">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="main-content">
+
+    <!-- Section 1: Hero -->
+    <section id="hero" class="hero-section">
+      <!-- Các thành phần trang trí nhỏ bay lơ lửng thuần CSS -->
+      <div class="hero-particles" aria-hidden="true">
+        <span class="particle particle-1">✨</span>
+        <span class="particle particle-2">🍃</span>
+        <span class="particle particle-3">🌸</span>
+        <span class="particle particle-4">⭐</span>
+        <span class="particle particle-5">🌿</span>
+      </div>
+
+      <div class="hero-container hero-fade">
+        <article class="hero-content">
+          <span class="hero-badge">Dải đất hình chữ S diệu kỳ</span>
+          <h1 class="hero-title animate__animated animate__fadeInDown">Khám Phá Các Vùng Đất Việt Nam</h1>
+          <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
+            Đắm chìm vào hành trình chiêm ngưỡng non sông gấm vóc: từ những cung đường đèo hùng vĩ Tây Bắc, di sản cổ kính miền Trung trầm mặc, đến miền sông nước Cửu Long đượm phù sa.
+          </p>
+          <p class="hero-actions">
+            <a href="#vung-mien" class="btn btn-primary animate__animated animate__pulse animate__infinite animate__slow">Khám phá các miền</a>
+            <a href="#diem-den" class="btn btn-secondary">Điểm đến hot</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 2: Giới thiệu -->
+    <section id="gioi-thieu" class="about-section">
+      <header class="section-header">
+        <span class="section-tag">Về Hành Trình</span>
+        <h2 class="section-title reveal-up hieu-ung-cuon">Nét Đẹp Bất Tận Của Quê Hương</h2>
+        <p class="section-subtitle">
+          Việt Nam không chỉ nổi tiếng với cảnh quan thiên nhiên trác tuyệt mà còn là cái nôi của chiều dài lịch sử hàng ngàn năm văn hiến cùng nền ẩm thực phong phú bậc nhất thế giới.
+        </p>
+      </header>
+
+      <section class="about-grid" aria-label="Điểm nhấn du lịch Việt Nam">
+        <article class="about-feature reveal-left">
+          <span class="feature-icon-badge">🏔️</span>
+          <h3 class="feature-title">Địa Hình Đa Dạng</h3>
+          <p class="feature-text">
+            Sở hữu ba phần tư là đồi núi xen lẫn những dải đồng bằng màu mỡ và hơn 3.260 km bờ biển nhiệt đới trong lành với làn nước xanh ngọc bích.
+          </p>
+        </article>
+
+        <article class="about-feature reveal-up">
+          <span class="feature-icon-badge">🏛️</span>
+          <h3 class="feature-title">Di Sản Ngàn Năm</h3>
+          <p class="feature-text">
+            Hàng loạt di sản thiên nhiên và văn hóa được UNESCO công nhận như Quần thể danh thắng Tràng An, Cố đô Huế, Phố cổ Hội An, Thánh địa Mỹ Sơn.
+          </p>
+        </article>
+
+        <article class="about-feature reveal-right">
+          <span class="feature-icon-badge">🍜</span>
+          <h3 class="feature-title">Ẩm Thực Đặc Sắc</h3>
+          <p class="feature-text">
+            Sự kết hợp tinh túy của gia vị thảo mộc bản địa, cân bằng âm dương và phong vị đặc trưng riêng biệt từ phở Hà Nội, bún bò Huế đến bánh xèo miền Tây.
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- Section 3: Vùng miền -->
+    <section id="vung-mien" class="regions-section">
+      <div class="regions-container">
+        <header class="section-header">
+          <span class="section-tag">Hành Trình Xuyên Việt</span>
+          <h2 class="section-title reveal-up hieu-ung-cuon">Ba Miền Đất Nước Đậm Đà Bản Sắc</h2>
+          <p class="section-subtitle">Mỗi vùng miền mang một nhịp thở, một sắc thái văn hóa và vẻ đẹp thiên nhiên rất đỗi riêng biệt.</p>
+        </header>
+
+        <section class="regions-grid" aria-label="Danh sách ba miền đất nước">
+          <!-- Card Miền Bắc: Sa Pa -->
+          <article class="card reveal-up hieu-ung-cuon" tabindex="0">
+            <div class="card-inner">
+              <figure class="card-front">
+                <img src="assets/images/sa-pa.jpg" alt="Ruộng bậc thang uốn lượn trong làn mây sớm tại vùng núi Sa Pa Tây Bắc" width="600" height="400" loading="lazy" class="card-img reveal-zoom hieu-ung-cuon">
+                <figcaption>
+                  <h3>Miền Bắc Việt Nam</h3>
+                  <p>Văn hiến ngàn năm & Núi non hùng vĩ</p>
+                </figcaption>
+              </figure>
+              <section class="card-back">
+                <h3>Miền Bắc Việt Nam</h3>
+                <p>Khám phá thủ đô Hà Nội ngàn năm văn hiến, non nước Tràng An huyền ảo và những cung đường đèo Tây Bắc quanh năm sương phủ mộng mơ.</p>
+                <div class="card-back-meta">
+                  <p><strong>Thời điểm đẹp nhất:</strong> Tháng 9 - Tháng 11 (Mùa lúa chín vàng rực và thu Hà Nội dịu mát).</p>
+                  <p><strong>Món ngon nên thử:</strong> Phở bò truyền thống, Bún chả quạt than hoa, Chả cá Lã Vọng.</p>
+                </div>
+                <a class="btn btn-primary" href="#lien-he">Tìm hiểu thêm</a>
+              </section>
+            </div>
+          </article>
+
+          <!-- Card Miền Trung: Hội An -->
+          <article class="card reveal-up hieu-ung-cuon" tabindex="0">
+            <div class="card-inner">
+              <figure class="card-front">
+                <img src="assets/images/hoi-an.jpg" alt="Phố cổ Hội An rực rỡ sắc màu đèn lồng và những mái ngói rêu phong cổ kính" width="600" height="400" loading="lazy" class="card-img reveal-zoom hieu-ung-cuon">
+                <figcaption>
+                  <h3>Miền Trung Việt Nam</h3>
+                  <p>Con đường di sản & Biển xanh cát trắng</p>
+                </figcaption>
+              </figure>
+              <section class="card-back">
+                <h3>Miền Trung Việt Nam</h3>
+                <p>Dải đất hẹp nép mình bên dãy Trường Sơn hùng vĩ, kết nối các cố đô trầm mặc, những hang động tráng lệ và bãi biển nắng vàng rực rỡ.</p>
+                <div class="card-back-meta">
+                  <p><strong>Thời điểm đẹp nhất:</strong> Tháng 2 - Tháng 8 (Trời trong xanh, biển lặng sóng và nắng ráo dịu dàng).</p>
+                  <p><strong>Món ngon nên thử:</strong> Mì Quảng đậm đà, Bún bò Huế chuẩn vị, Cao lầu Hội An.</p>
+                </div>
+                <a class="btn btn-primary" href="#lien-he">Tìm hiểu thêm</a>
+              </section>
+            </div>
+          </article>
+
+          <!-- Card Miền Nam: Đà Lạt / Cao nguyên & Miền Nam -->
+          <article class="card reveal-up hieu-ung-cuon" tabindex="0">
+            <div class="card-inner">
+              <figure class="card-front">
+                <img src="assets/images/da-lat.jpg" alt="Thành phố ngàn hoa Đà Lạt mờ ảo giữa rừng thông và mây sương bảng lảng" width="600" height="400" loading="lazy" class="card-img reveal-zoom hieu-ung-cuon">
+                <figcaption>
+                  <h3>Miền Nam & Cao Nguyên</h3>
+                  <p>Sức sống phồn hoa & Thiên nhiên thơ mộng</p>
+                </figcaption>
+              </figure>
+              <section class="card-back">
+                <h3>Miền Nam & Cao Nguyên</h3>
+                <p>Trải nghiệm sự tương phản đầy quyến rũ giữa đô thị Sài Gòn tràn đầy sức sống, cao nguyên hoa mộng mơ và miền tây sông nước hào sảng.</p>
+                <div class="card-back-meta">
+                  <p><strong>Thời điểm đẹp nhất:</strong> Tháng 11 - Tháng 4 (Mùa khô ráo, trăm hoa khoe sắc và miệt vườn trĩu quả).</p>
+                  <p><strong>Món ngon nên thử:</strong> Cơm tấm sườn bì chả, Lẩu mắm miền Tây, Bánh xèo giòn rụm.</p>
+                </div>
+                <a class="btn btn-primary" href="#lien-he">Tìm hiểu thêm</a>
+              </section>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <!-- Section 4: Điểm đến nổi bật -->
+    <section id="diem-den" class="destinations-section">
+      <header class="section-header">
+        <span class="section-tag">Địa Danh Yêu Thích</span>
+        <h2 class="section-title reveal-up hieu-ung-cuon">Điểm Đến Không Thể Bỏ Lỡ</h2>
+        <p class="section-subtitle">Những địa danh làm say lòng du khách trong nước và quốc tế bởi vẻ đẹp ngoạn mục khó quên.</p>
+      </header>
+
+      <section class="destinations-grid" aria-label="Danh sách điểm đến nổi bật">
+        <!-- Điểm 1: Sa Pa -->
+        <article class="destination-card reveal-up hieu-ung-cuon" tabindex="0">
+          <figure class="destination-figure">
+            <img src="assets/images/sa-pa.jpg" alt="Thị trấn Sa Pa mờ ảo trong mây với núi non trập trùng Tây Bắc" width="400" height="300" loading="lazy" class="destination-img reveal-zoom hieu-ung-cuon">
+            <figcaption>Thị trấn mây mù Sa Pa quanh năm mộng ảo</figcaption>
+          </figure>
+          <section class="card-body">
+            <span class="destination-location">Lào Cai - Tây Bắc</span>
+            <h3 class="card-title">Thị Trấn Sa Pa</h3>
+            <p class="card-desc">
+              Chinh phục đỉnh Fansipan - nóc nhà Đông Dương, ngắm thung lũng Mường Hoa bảng lảng trong sương sớm.
+            </p>
+          </section>
+        </article>
+
+        <!-- Điểm 2: Vịnh Hạ Long -->
+        <article class="destination-card reveal-up hieu-ung-cuon" tabindex="0">
+          <figure class="destination-figure">
+            <img src="assets/images/ha-long.jpg" alt="Vịnh Hạ Long với hàng ngàn hòn đảo đá vôi xanh ngát giữa biển trời bao la" width="400" height="300" loading="lazy" class="destination-img reveal-zoom hieu-ung-cuon">
+            <figcaption>Hàng ngàn hòn đảo đá vôi kỳ vĩ</figcaption>
+          </figure>
+          <section class="card-body">
+            <span class="destination-location">Quảng Ninh - Đông Bắc</span>
+            <h3 class="card-title">Vịnh Hạ Long</h3>
+            <p class="card-desc">
+              Trải nghiệm du thuyền ngắm hoàng hôn buông trên mặt biển biếc và thám hiểm các hang động thạch nhũ hàng triệu năm.
+            </p>
+          </section>
+        </article>
+
+        <!-- Điểm 3: Hội An -->
+        <article class="destination-card reveal-up hieu-ung-cuon" tabindex="0">
+          <figure class="destination-figure">
+            <img src="assets/images/hoi-an.jpg" alt="Đêm phố cổ Hội An huyền ảo lung linh ánh đèn lồng bên dòng sông Hoài" width="400" height="300" loading="lazy" class="destination-img reveal-zoom hieu-ung-cuon">
+            <figcaption>Hoài niệm mái ngói rêu phong bên dòng sông Hoài</figcaption>
+          </figure>
+          <section class="card-body">
+            <span class="destination-location">Quảng Nam - Duyên hải Trung Bộ</span>
+            <h3 class="card-title">Phố Cổ Hội An</h3>
+            <p class="card-desc">
+              Tản bộ qua những con ngõ tường vàng hoa giấy rực rỡ, lắng nghe câu hò bài chòi và thả đèn hoa đăng lung linh.
+            </p>
+          </section>
+        </article>
+
+        <!-- Điểm 4: Đà Lạt -->
+        <article class="destination-card reveal-up hieu-ung-cuon" tabindex="0">
+          <figure class="destination-figure">
+            <img src="assets/images/da-lat.jpg" alt="Khung cảnh Đà Lạt mộng mơ với đồi thông xanh ngát và khí hậu trong lành" width="400" height="300" loading="lazy" class="destination-img reveal-zoom hieu-ung-cuon">
+            <figcaption>Thành phố mù sương ngập tràn hương sắc hoa</figcaption>
+          </figure>
+          <section class="card-body">
+            <span class="destination-location">Lâm Đồng - Tây Nguyên</span>
+            <h3 class="card-title">Thành Phố Đà Lạt</h3>
+            <p class="card-desc">
+              Tận hưởng tiết trời se lạnh mát mẻ quanh năm, ngắm hồ Xuân Hương thơ mộng và dạo bước giữa những đồi thông ngút ngàn.
+            </p>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- Section 5: Liên hệ -->
+    <section id="lien-he" class="contact-section">
+      <header class="section-header">
+        <span class="section-tag">Đồng Hành Cùng Bạn</span>
+        <h2 class="section-title reveal-up hieu-ung-cuon">Kết Nối Với Chúng Tôi</h2>
+        <p class="section-subtitle">Để lại thông tin để nhận tư vấn lịch trình khám phá Việt Nam phù hợp nhất cho chuyến đi của bạn.</p>
+      </header>
+
+      <section class="contact-container" aria-label="Khu vực liên hệ và tư vấn">
+        <article class="contact-info">
+          <h3>Trung Tâm Hỗ Trợ Du Khách</h3>
+          <p>
+            Đội ngũ tư vấn am hiểu sâu sắc từng cung đường, nét văn hóa bản địa luôn sẵn sàng hỗ trợ bạn kiến tạo những chuyến du ngoạn tuyệt vời nhất.
+          </p>
+
+          <address class="contact-address-block">
+            <ul class="contact-detail-list">
+              <li class="contact-detail-item">
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <span class="contact-text"><strong>Địa chỉ:</strong> 123 Đường Trần Phú, Quận Ba Đình, Hà Nội, Việt Nam</span>
+              </li>
+              <li class="contact-detail-item">
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <span class="contact-text"><strong>Điện thoại:</strong> <a href="tel:19006868" class="contact-link">(+84) 1900 6868</a> - Hotline 24/7</span>
+              </li>
+              <li class="contact-detail-item">
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <span class="contact-text"><strong>Email:</strong> <a href="mailto:khampha@dulichvietnam.vn" class="contact-link">khampha@dulichvietnam.vn</a></span>
+              </li>
+              <li class="contact-detail-item">
+                <span class="contact-icon" aria-hidden="true">⏰</span>
+                <span class="contact-text"><strong>Giờ làm việc:</strong> Thứ Hai - Chủ Nhật (08:00 - 20:00)</span>
+              </li>
+            </ul>
+          </address>
+        </article>
+
+        <form class="contact-form" action="#" method="post">
+          <p class="form-group">
+            <label for="fullname">Họ và tên của bạn</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Ví dụ: Nguyễn Văn A" required>
+          </p>
+
+          <p class="form-group">
+            <label for="email">Địa chỉ Email</label>
+            <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+          </p>
+
+          <p class="form-group">
+            <label for="destination-interest">Vùng miền bạn muốn khám phá</label>
+            <select id="destination-interest" name="destination-interest">
+              <option value="mien-bac">Miền Bắc (Tây Bắc, Sa Pa, Hạ Long, Hà Nội)</option>
+              <option value="mien-trung">Miền Trung (Di sản, Huế, Hội An, Đà Nẵng)</option>
+              <option value="mien-nam">Miền Nam & Cao Nguyên (Đà Lạt, TP.HCM, Miền Tây)</option>
+              <option value="xuyen-viet">Hành trình Xuyên Việt toàn diện</option>
+            </select>
+          </p>
+
+          <p class="form-group">
+            <label for="message">Lời nhắn hoặc yêu cầu chi tiết</label>
+            <textarea id="message" name="message" rows="4" placeholder="Chia sẻ số lượng người đi, thời gian dự kiến và mong muốn của bạn..."></textarea>
+          </p>
+
+          <button type="submit" class="btn-submit">Gửi Thông Tin Tư Vấn</button>
+        </form>
+      </section>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <article class="footer-brand">
+        <h3>Việt Nam Travel</h3>
+        <p>
+          Cổng thông tin du lịch tôn vinh vẻ đẹp tự nhiên, chiều sâu văn hóa và con người Việt Nam thân thiện, mến khách.
+        </p>
+      </article>
+
+      <section class="footer-col" aria-label="Liên kết vùng miền">
+        <h4>Vùng Miền</h4>
+        <ul class="footer-links">
+          <li><a href="#vung-mien">Du lịch Miền Bắc</a></li>
+          <li><a href="#vung-mien">Du lịch Miền Trung</a></li>
+          <li><a href="#vung-mien">Du lịch Miền Nam</a></li>
+          <li><a href="#vung-mien">Du lịch Cao Nguyên</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-label="Liên kết điểm đến nổi bật">
+        <h4>Điểm Đến Hot</h4>
+        <ul class="footer-links">
+          <li><a href="#diem-den">Thị trấn Sa Pa</a></li>
+          <li><a href="#diem-den">Vịnh Hạ Long</a></li>
+          <li><a href="#diem-den">Phố Cổ Hội An</a></li>
+          <li><a href="#diem-den">Thành Phố Đà Lạt</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-col" aria-label="Liên kết chính sách và hỗ trợ">
+        <h4>Chính Sách & Hỗ Trợ</h4>
+        <ul class="footer-links">
+          <li><a href="#gioi-thieu">Giới thiệu dự án</a></li>
+          <li><a href="#lien-he">Hướng dẫn du lịch an toàn</a></li>
+          <li><a href="#lien-he">Bảo tồn di sản xanh</a></li>
+          <li><a href="#lien-he">Liên hệ truyền thông</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Khám Phá Các Vùng Đất Việt Nam. Bảo lưu mọi quyền.</p>
+    </div>
+  </footer>
+
+  <!-- Nút Message rung lắc nổi ở góc màn hình (Floating Chat Widget thuần CSS) -->
+  <aside class="floating-message-widget" aria-label="Hỗ trợ trực tuyến">
+    <a href="#lien-he" class="btn-message-float" aria-label="Gửi tin nhắn hoặc liên hệ tư vấn" title="Gửi tin nhắn cho chúng tôi">
+      <!-- Vòng sóng hào quang lan tỏa -->
+      <span class="message-pulse-wave" aria-hidden="true"></span>
+      <span class="message-pulse-wave" aria-hidden="true"></span>
+      <!-- Biểu tượng tin nhắn -->
+      <span class="message-icon" aria-hidden="true">💬</span>
+      <!-- Huy hiệu số lượng tin nhắn mới -->
+      <span class="message-badge" aria-label="1 tin nhắn mới">1</span>
+    </a>
+    <span class="message-tooltip">Nhắn tin cho chúng tôi!</span>
+  </aside>
+
+</body>
+</html>
